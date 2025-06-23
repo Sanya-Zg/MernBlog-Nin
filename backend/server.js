@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 import express from 'express';
 import mongoose from 'mongoose';
-import workoutRoutes from './routes/workouts.js';
+import workoutRoutes from './routes/workoutsRoutes.js';
 
 // express app
 const app = express();
