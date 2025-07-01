@@ -3,6 +3,7 @@ dotenv.config();
 import express from 'express';
 import mongoose from 'mongoose';
 import workoutRoutes from './routes/workoutsRoutes.js';
+import usersRoutes from './routes/users.js';
 
 // express app
 const app = express();
@@ -16,6 +17,7 @@ app.use((req, res, next) => {
 
 // routes
 app.use('/api/workouts', workoutRoutes);
+app.use('/api/user', usersRoutes);
 // port
 const PORT = process.env.PORT;
 
